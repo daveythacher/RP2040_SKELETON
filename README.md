@@ -6,7 +6,7 @@
 Create folder for application, which is created for you in this project as Code. Create subfolders include, lib and src under Code. (Also done for you.) 
 
 ## Step 2: Build logic
-Examples taken from [this](https://github.com/daveythacher/LED_Matrix_RP2040).
+CMake examples taken from [this](https://github.com/daveythacher/LED_Matrix_RP2040). The CMake logic in link does stuff with libraries and configuring multiple applications, which was stripped out for basic executable creation. The example code used here is just a blink example from pico-examples.
 
 ### 2.1: Top level script for linux
 Create file called build.sh with the following:
