@@ -107,6 +107,7 @@ pico_add_dis_output2(app)
 target_link_libraries(app 
     pico_runtime
     pico_multicore
+    pico_stdlib
 )
 
 # linker options
@@ -128,6 +129,13 @@ Create the file setup.sh in top level directory. (Outside of Code)
 
 sudo apt update
 sudo apt install -y cmake git gcc-arm-none-eabi gcc g++ build-essential python3 doxygen graphviz
+```
+
+## Optional step: Keep git repo clean
+Add the following to .gitignore:
+```
+Code/build/*
+Code/pico_sdk_import.cmake
 ```
 
 # Build
