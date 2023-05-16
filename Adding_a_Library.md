@@ -16,9 +16,9 @@ Add the following to the Code/lib/CMakeLists.txt:
 ```
 add_subdirectory(<folder name>)
 ```
-Note pico-sdk is in the Code/lib but cannot be included. Every other folder should be.
+Note pico-sdk is in Code/lib but cannot be included. Every other folder should be.
 ## Step 4: Create the build logic
-In the library we need to create the build logic in CMake. There are three types of libraries which you can create. This will show you how to create an interface library which will be compiled as it if part of the main binary.
+In the library we need to create the build logic in CMake. There are three types of libraries which you can create. This will show you how to create an interface library which will be compiled as if it is part of the main binary.
 
 Create a file called Code/lib/<folder name>/CMakeLists.txt with the following contents:
 ```
@@ -38,7 +38,7 @@ target_link_libraries(lib INTERFACE
     hardware_timer
 )
 ```
-Note if the file already exists or this project is a submodule with a CMakeLists.txt you may need to remove or modify it. For a submodule this may involve a forking the submodule and making modify the CMakeLists.txt at the top level. If this is done correctly you should still be capable of pulling in updates via cherry picking, however this is advanced.
+Note if the file already exists or this project is a submodule with a CMakeLists.txt you may need to remove or modify it. For a submodule this may involve a forking the submodule and making modify the CMakeLists.txt at the top level. If this is done correctly you should still be capable of pulling in updates via cherry picking, however this is advanced. A pull and merge is likely to work in most cases and this is preferred.
   
 ## Step 5: Link library to main binary
 Add the following to Code/src/CMakeLists.txt, inside the target_link_libraries:
