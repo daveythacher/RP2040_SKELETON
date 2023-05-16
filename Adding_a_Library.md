@@ -1,6 +1,6 @@
 # Setup
 ## Step 1: Setup main project
-Follow steps in README.md
+Follow steps in Project_Setup.md
 ## Step 2: Add or make the library
 ### Step 2.1: Manual code library
 Create unique folder under Code/lib. (The resulting path would be Code/lib/<folder name>) Add any and all source code files to this folder.
