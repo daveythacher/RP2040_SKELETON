@@ -40,7 +40,7 @@ target_link_libraries(lib INTERFACE
 ```
 Note if the file already exists or this project is a submodule with a CMakeLists.txt you may need to remove or modify it. For a submodule this may involve a forking the submodule and making modify the CMakeLists.txt at the top level. If this is done correctly you should still be capable of pulling in updates via cherry picking, however this is advanced.
   
-# Step 4: Link library to main binary
+## Step 5: Link library to main binary
 Add the following to the Code/src/CMakeLists.txt, inside the target_link_libraries:
 ```
   lib
