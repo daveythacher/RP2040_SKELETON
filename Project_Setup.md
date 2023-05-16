@@ -1,5 +1,3 @@
-# RP2040_SKELETON
-
 # Setup
 
 ## Step 1: Setup directory layout
