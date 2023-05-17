@@ -17,3 +17,6 @@ Once the setup steps have been completed, you should be able to compile with one
 bash build.sh
 ```
 In the case of this example a blink example binary will be created called Code/build/src/app.uf2
+
+
+Note this tutorial is written for Linux, however all the CMake logic should work on Windows, MAC, etc.
