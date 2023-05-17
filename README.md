@@ -11,3 +11,9 @@ Warning: Here are some of the areas which are not fully explained. (That I can t
     Multiple executables (not really common)
     Preprocessor macros and compiler flags
 ```
+
+Once completed the setup steps. You should be able to compile with one command:
+``` bash
+bash build.sh
+```
+In the case of this example a blink example binary will be created called Code/build/src/app.uf2
