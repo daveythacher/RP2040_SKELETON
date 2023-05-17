@@ -12,7 +12,7 @@ Warning: Here are some of the areas which are not fully explained. (That I can t
     Preprocessor macros and compiler flags
 ```
 
-Once completed the setup steps. You should be able to compile with one command:
+Once the setup steps have been completed, you should be able to compile with one command:
 ``` bash
 bash build.sh
 ```
