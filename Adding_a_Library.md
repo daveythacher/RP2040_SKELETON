@@ -20,7 +20,7 @@ Note pico-sdk is in Code/lib but cannot be included. Every other folder should b
 ## Step 4: Create the build logic
 In the library we need to create the build logic in CMake. There are three types of libraries which you can create. This will show you how to create an interface library which will be compiled as if it is part of the main binary.
 
-Create a file called Code/lib/<folder name>/CMakeLists.txt with the following contents:
+Create a file called Code/lib/\<folder name\>/CMakeLists.txt with the following contents:
 ```
 # It is not recommended to build dynamic libraries.
 add_library(lib INTERFACE)
