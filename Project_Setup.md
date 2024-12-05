@@ -78,7 +78,7 @@ target_compile_options(app PRIVATE
     -g 
     -ffunction-sections 
     -fdata-sections 
-    -O3
+    #-O3 (CMake may override this)
     -funroll-loops 
     -Werror 
     -Wall
